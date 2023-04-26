@@ -292,7 +292,6 @@ body {
 }
 
 .basement-container {
-  max-width: 264px;
   flex-direction: column;
   display: inline-block;
 }
@@ -313,8 +312,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 
+  max-width: 264px;
   margin-top: 0;
   margin-bottom: 0;
+  padding: 0;
 }
 
 .basement .accent {
