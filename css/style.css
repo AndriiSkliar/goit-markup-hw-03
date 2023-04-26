@@ -290,14 +290,23 @@ body {
   padding-bottom: 100px;
 }
 
+.basement > .basement-container {
+  margin-right: auto;
+}
+
 .basement-container {
   max-width: 264px;
+  flex-direction: column;
 }
 
 .basement-container > .logo {
   padding-top: 0;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   margin-right: 0;
+}
+
+.basement-container > .link {
+  padding-bottom: 0;
 }
 
 .basement-text {
