@@ -346,6 +346,7 @@ body {
 
 .work-cards {
   width: calc((100% - 24 * 2) / 3);
+  margin-block-start: 0;
   padding-left: 0;
   padding-bottom: 120px;
   margin-top: -48;
@@ -353,7 +354,6 @@ body {
   margin-left: -24px;
   display: flex;
   flex-wrap: wrap;
-  margin-block-start: 0;
 }
 
 .work-card {
