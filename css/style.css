@@ -17,8 +17,19 @@ body {
   background: var(--background-color);
 }
 
+.wrapper {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
 .link {
   text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: inline-block;
 }
 
 .list {
@@ -26,7 +37,23 @@ body {
   font-style: normal;
 }
 
+.nav > .list,
+.connect > .list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.position {
+  display: flex;
+}
+
 /* header */
+
+.container {
+  display: flex;
+  border-bottom: 1px solid #e7e9fc;
+}
 
 .logo {
   color: var(--accent-color);
@@ -42,6 +69,14 @@ body {
   color: var(--header-color);
 }
 
+.nav {
+  align-items: center;
+}
+
+.nav > .list {
+  margin-left: 76px;
+}
+
 .nav-link {
   font-size: 16px;
   line-height: 1.5;
@@ -54,8 +89,38 @@ body {
   color: #404bbf;
 }
 
+.list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.features > .list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.features-item > .caption {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.features-item > .text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .connect {
   font-style: normal;
+  margin-left: auto;
 }
 
 .connect-link:hover,
@@ -74,6 +139,10 @@ body {
 
 .hero {
   background-color: var(--secondary-background);
+
+  text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -82,6 +151,12 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+
+  max-width: 496px;
+  margin-top: 0;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn {
@@ -93,6 +168,12 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  border: 0;
 }
 
 .caption {
@@ -108,8 +189,14 @@ body {
   color: var(--primary-text-color);
 }
 
-.section + .section {
-  background-color: #f4f4fd;
+.features + .section {
+  padding-bottom: 120px;
+}
+
+.section > .list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .section-title {
@@ -119,10 +206,49 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+
+  margin-top: 0;
+  margin-bottom: 72px;
 }
 
-.section-item {
-  background-color: var(--secondary-color);
+.section-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.section-item > img {
+  display: block;
+}
+
+.team {
+  background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-container {
+  background-color: var(--background-color);
+
+  padding-top: 32px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  text-align: center;
+}
+
+.section-container > .caption {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.section-container > .text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.team .section-item {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .btn:hover,
@@ -146,6 +272,17 @@ body {
 
 .basement {
   background-color: var(--secondary-background);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.basement-container {
+  max-width: 264px;
+}
+
+.basement-container > .logo {
+  padding-top: 0;
+  padding-bottom: 16px;
 }
 
 .basement-text {
@@ -154,6 +291,9 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .basement .accent {
