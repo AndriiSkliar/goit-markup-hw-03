@@ -27,6 +27,7 @@ body {
 .list {
   list-style: none;
   font-style: normal;
+  padding-inline-start: 0;
 }
 
 .nav > .list,
@@ -293,7 +294,7 @@ body {
 .basement-container {
   max-width: 264px;
   flex-direction: column;
-  margin-left: 0;
+  display: inline-block;
 }
 
 .basement-container > .logo {
