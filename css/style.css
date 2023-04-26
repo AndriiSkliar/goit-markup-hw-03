@@ -18,11 +18,8 @@ body {
 }
 
 .wrapper {
-  width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 12px;
-  padding-right: 12px;
 }
 
 .link {
@@ -50,9 +47,15 @@ body {
 
 /* header */
 
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .container {
   display: flex;
-  border-bottom: 1px solid #e7e9fc;
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .logo {
@@ -63,6 +66,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .accent {
@@ -71,10 +75,6 @@ body {
 
 .nav {
   align-items: center;
-}
-
-.nav > .list {
-  margin-left: 76px;
 }
 
 .nav-link {
@@ -283,6 +283,7 @@ body {
 .basement-container > .logo {
   padding-top: 0;
   padding-bottom: 16px;
+  margin-right: 0;
 }
 
 .basement-text {
