@@ -302,6 +302,20 @@ body {
 
 /* portfolio page  */
 
+.work-list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  padding-top: 96px;
+  padding-bottom: 24px;
+  justify-content: center;
+}
+
+.work-item:not(:last-child) {
+  margin-right: 24px;
+}
+
 .radio-btn {
   background-color: var(--footer-color);
   color: #4d5ae5;
@@ -311,10 +325,67 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  padding-top: 11px;
+  padding-right: 23px;
+  padding-bottom: 11px;
+  padding-left: 23px;
 }
 
 .radio-btn:hover,
 .radio-btn:focus {
   color: var(--secondary-color);
   background-color: var(--btn-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.work-cards {
+  width: calc((100% - 24 * 2) / 3);
+  padding-left: 0;
+  padding-bottom: 120px;
+  margin-top: -48;
+  margin-bottom: 0;
+  margin-left: -24px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-block-start: 0;
+}
+
+.work-card {
+  margin-top: 48px;
+  margin-left: 24px;
+}
+
+.work-card .link {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.work-container {
+  box-sizing: border-box;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
+
+.work-card .caption,
+.work-card .text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.work-card .caption {
+  margin-bottom: 8px;
+}
+
+.work-card img {
+  display: block;
 }
