@@ -95,7 +95,7 @@ body {
   padding-bottom: 120px;
 }
 
-.features > .list {
+.features .list {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -206,7 +206,7 @@ body {
   flex-basis: calc((100% - 3 * 16px) / 3);
 }
 
-.section > .list {
+.section .list {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -287,13 +287,10 @@ body {
 
 .basement {
   background-color: var(--secondary-background);
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
 
-.basement-container {
-  flex-direction: column;
-  display: inline-block;
+  padding: 100px 15px;
+  margin: 0 auto;
+  width: 1158px;
 }
 
 .basement-container > .logo {
@@ -375,7 +372,6 @@ body {
 .work-cards {
   margin-block-start: 0;
   padding-left: 0;
-  padding-bottom: 120px;
   margin-bottom: 0;
   display: flex;
   flex-wrap: wrap;
