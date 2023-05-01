@@ -287,12 +287,13 @@ body {
 
 .basement {
   background-color: var(--secondary-background);
+
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-.basement-container {
-  padding: 100px 15px;
-  margin: 0 auto;
-  width: 1158px;
+.basement .container {
+  display: block;
 }
 
 .basement-container > .logo {
